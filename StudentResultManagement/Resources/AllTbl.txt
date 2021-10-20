@@ -1,0 +1,94 @@
+1.TspInfo
+ComId
+AutoNo 
+TspId
+TspName
+TspPhone
+TstEmail
+TspAddress
+SrtDate
+Entime(getDate)
+UserId
+Pcname
+
+Insert into TspInfo(TspId,TspName,TspPhone,TspEmail,TspAddress,SrtDate)values
+('PNT102','PNTL','01685105029','pntl@gmail.com','Green Road Dhaka',convert(datetime,'01/01/2001',103))
+
+2.TchInfo
+ComId
+AutoNo
+TchId
+TchName
+TchJoinDate
+TchPhone
+TchEmail
+TchAddress
+Entime
+UserId
+Passwords
+Pcname
+ImgName
+
+3.StudentDtls
+ComId
+AutoNo
+StId
+StName
+StContNumber
+StStPrsNumber
+StAddress
+StEmail
+EnTime
+UserId
+PcName
+
+4. CourseDtls
+ComId
+AutoNo
+CrsId
+CrsName
+CrsDuratin
+CrsShpt
+CrsFee
+EnTime 
+UserId
+PcName
+
+5.ModuleDtls
+ComId
+AutoNo
+MdlId
+CrsId Pk rfc CourseDtls
+MdlName
+MdlFees
+
+6.Admission
+ComiId
+AutoNo
+clsRoll
+TchId pk ref TchInfo
+StId pk ref StudentDtls
+CrsId pk ref CourseDtls
+MdlId pk ref ModuleDtls
+AdsCost
+CoreCost
+Rmk
+userId
+PcName
+Entime
+
+7.ResultMake
+ComId
+AutoNo
+RslId
+StId pk ref StudentDtls
+MdlMarks
+MdlPoint
+MdlGrade
+
+
+
+
+
+
+
